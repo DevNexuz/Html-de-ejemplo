@@ -69,6 +69,6 @@ Este proyecto es únicamente de práctica y puedes usarlo como referencia educat
 
 ## ✨ Autor
 
-**nexuzdev**  
+**devnexuz**  
 Desarrollador en aprendizaje continuo.  
-GitHub: https://github.com/nexuzdev
+GitHub: https://github.com/devnexuz
