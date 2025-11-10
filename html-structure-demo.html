@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estructura HTML Completa - Demo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #444;
+            padding: 10px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 20px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+        main {
+            background-color: white;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        section {
+            margin-bottom: 30px;
+        }
+        aside {
+            background-color: #e9e9e9;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #333;
+            color: white;
+        }
+        form {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        input, textarea, select {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0 15px 0;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #555;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- HEADER -->
+        <header>
+            <h1>Estructura HTML Completa</h1>
+            <p>Mockup de demostración para curso</p>
+        </header>
+
+        <!-- NAVIGATION -->
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#contenido">Contenido</a></li>
+                <li><a href="#multimedia">Multimedia</a></li>
+                <li><a href="#formulario">Formulario</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <!-- MAIN CONTENT -->
+        <main>
+            <!-- SECTION 1: Textos y Encabezados -->
+            <section id="inicio">
+                <h2>Sección 1: Encabezados y Párrafos</h2>
+                <h3>Subtítulo Nivel 3</h3>
+                <p>Este es un <strong>párrafo de ejemplo</strong> que muestra cómo se estructura el contenido en HTML. Puedes usar <em>énfasis</em>, <u>subrayado</u>, y otros formatos.</p>
+                <p>Aquí hay un segundo párrafo con un <a href="https://www.example.com">enlace de ejemplo</a>.</p>
+                
+                <h4>Listas</h4>
+                <h5>Lista Desordenada:</h5>
+                <ul>
+                    <li>Elemento 1</li>
+                    <li>Elemento 2</li>
+                    <li>Elemento 3</li>
+                </ul>
+
+                <h5>Lista Ordenada:</h5>
+                <ol>
+                    <li>Primer paso</li>
+                    <li>Segundo paso</li>
+                    <li>Tercer paso</li>
+                </ol>
+            </section>
+
+            <!-- SECTION 2: Tabla -->
+            <section id="contenido">
+                <h2>Sección 2: Tabla de Datos</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Edad</th>
+                            <th>Ciudad</th>
+                            <th>Profesión</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Juan Pérez</td>
+                            <td>28</td>
+                            <td>Madrid</td>
+                            <td>Desarrollador</td>
+                        </tr>
+                        <tr>
+                            <td>María García</td>
+                            <td>32</td>
+                            <td>Barcelona</td>
+                            <td>Diseñadora</td>
+                        </tr>
+                        <tr>
+                            <td>Carlos López</td>
+                            <td>25</td>
+                            <td>Valencia</td>
+                            <td>Ingeniero</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <!-- SECTION 3: Multimedia -->
+            <section id="multimedia">
+                <h2>Sección 3: Multimedia</h2>
+                <h3>Imagen</h3>
+                <img src="https://via.placeholder.com/600x300" alt="Imagen de ejemplo">
+                
+                <h3>Video</h3>
+                <video width="600" controls>
+                    <source src="video-ejemplo.mp4" type="video/mp4">
+                    Tu navegador no soporta el elemento de video.
+                </video>
+
+                <h3>Audio</h3>
+                <audio controls>
+                    <source src="audio-ejemplo.mp3" type="audio/mpeg">
+                    Tu navegador no soporta el elemento de audio.
+                </audio>
+            </section>
+
+            <!-- SECTION 4: Formulario -->
+            <section id="formulario">
+                <h2>Sección 4: Formulario de Contacto</h2>
+                <form action="#" method="POST">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono" placeholder="123-456-7890">
+
+                    <label for="pais">País:</label>
+                    <select id="pais" name="pais">
+                        <option value="">Selecciona un país</option>
+                        <option value="mx">México</option>
+                        <option value="es">España</option>
+                        <option value="ar">Argentina</option>
+                        <option value="co">Colombia</option>
+                    </select>
+
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..."></textarea>
+
+                    <label>
+                        <input type="checkbox" name="newsletter"> Deseo recibir el newsletter
+                    </label>
+
+                    <h4>Género:</h4>
+                    <label><input type="radio" name="genero" value="masculino"> Masculino</label>
+                    <label><input type="radio" name="genero" value="femenino"> Femenino</label>
+                    <label><input type="radio" name="genero" value="otro"> Otro</label>
+
+                    <button type="submit">Enviar Formulario</button>
+                </form>
+            </section>
+        </main>
+
+        <!-- ASIDE -->
+        <aside>
+            <h3>Barra Lateral (Aside)</h3>
+            <p>Este es un contenido complementario que aparece en una barra lateral.</p>
+            <ul>
+                <li>Recurso 1</li>
+                <li>Recurso 2</li>
+                <li>Recurso 3</li>
+            </ul>
+        </aside>
+
+        <!-- FOOTER -->
+        <footer id="contacto">
+            <p>&copy; 2025 - Estructura HTML Demo</p>
+            <p>Contacto: <a href="mailto:info@example.com" style="color: #fff;">info@example.com</a></p>
+        </footer>
+    </div>
+</body>
+</html>
